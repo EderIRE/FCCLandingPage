@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="import" href="index.html" />
+    <title>Registration</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      background: radial-gradient(
+          circle at 100% 50%,
+          transparent 20%,
+          rgba(255, 255, 255, 0.3) 21%,
+          rgba(255, 255, 255, 0.3) 34%,
+          transparent 35%,
+          transparent
+        ),
+        radial-gradient(
+            circle at 0% 50%,
+            transparent 20%,
+            rgba(255, 255, 255, 0.3) 21%,
+            rgba(255, 255, 255, 0.3) 34%,
+            transparent 35%,
+            transparent
+          )
+          0 -50px;
+      background-color: slategray;
+      background-size: 75px 100px;
+    }
+
+    h1 {
+      max-width: 200px;
+      min-height: 100vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      animation: title 3s infinite;
+    }
+
+    @keyframes title {
+      100% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+  <body>
+    <h1>Obrigado pelo seu cadastro!</h1>
+  </body>
+</html>

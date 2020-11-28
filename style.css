@@ -5,6 +5,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+section {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 #header {
   background: linear-gradient(to right, #808080, #3fada8);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
@@ -16,6 +25,7 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -74,9 +84,32 @@ img:hover {
   padding: 10px;
 }
 
+#video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#screen {
+  border-radius: 20px;
+  animation: vid 2s infinite;
+  transition: 0.5s ease-in-out;
+}
+
+@keyframes vid {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #screen {
+    width: 200px;
+    height: auto;
+  }
+}
+
 #main-form {
-  background: linear-gradient(to right, #2c3e50, #4ca1af);
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

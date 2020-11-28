@@ -40,24 +40,34 @@
       </nav>
     </header>
 
-    <article id="video"></article>
-
-    <div id="main-form">
-      <form id="form" action="">
-        <label for="email">E-mail</label>
-        <div class="inputs">
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Insira seu e-mail"
-            required
+    <section>
+      <article id="video">
+        <video id="screen" width="320" height="240" controls>
+          <source
+            src="https://www.youtube.com/watch?v=76jpCIZTq2E&ab_channel=WowArt"
+            type="video/mp4"
           />
-        </div>
-        <div class="inputs">
-          <input id="submit" type="Submit" value="Bora nessa!" />
-        </div>
-      </form>
-    </div>
+          our browser does not support the video tag.
+        </video>
+      </article>
+
+      <div id="main-form">
+        <form id="form" action="./register.html">
+          <label for="email">E-mail</label>
+          <div class="inputs">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Insira seu e-mail"
+              required
+            />
+          </div>
+          <div class="inputs">
+            <input id="submit" type="Submit" value="Bora nessa!" />
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
