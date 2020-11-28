@@ -57,7 +57,6 @@ img:hover {
 
 #main-form {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
-  max-width: auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -65,6 +64,8 @@ img:hover {
 }
 
 #form {
+  width: auto;
+  flex-wrap: wrap;
   display: flex;
   padding: 30px;
 }
