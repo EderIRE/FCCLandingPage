@@ -8,6 +8,7 @@
 #header {
   background: linear-gradient(to right, #808080, #3fada8);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+  text-align: center;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -15,6 +16,14 @@
   top: 0;
   right: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .headerflex {
@@ -41,8 +50,14 @@ img:hover {
   list-style: none;
 }
 
+@media only screen and (max-width: 600px) {
+  #main-nav {
+    text-align: center;
+  }
+}
+
 .nav-link {
-  padding: 10px;
+  display: flex;
   text-align: center;
 }
 
@@ -55,6 +70,10 @@ img:hover {
   align-items: center;
 }
 
+#main-nav .nav-link {
+  padding: 10px;
+}
+
 #main-form {
   background: linear-gradient(to right, #2c3e50, #4ca1af);
   min-height: 100vh;
@@ -64,10 +83,15 @@ img:hover {
 }
 
 #form {
-  width: auto;
   flex-wrap: wrap;
   display: flex;
-  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #form {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 input {
@@ -81,10 +105,10 @@ input {
   padding: 10px;
 }
 
-label,
-#email,
-#submit {
-  padding: 15px;
+@media only screen and (max-width: 600px) {
+  #email {
+    width: auto;
+  }
 }
 
 label {
