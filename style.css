@@ -1,84 +1,99 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.pocazoi {
-    font-family: 'Rock Salt', cursive;
-    font-size: 1.3rem;
+#header {
+  background: linear-gradient(to right, #808080, #3fada8);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.36);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
 .headerflex {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: rgba(235, 161, 70, 0.466);
+  display: flex;
+  align-items: center;
 }
 
+img,
+h2 {
+  padding: 10px;
+}
 
-li {
-  float: right;
+h2:hover {
+  color: yellow;
+}
+
+img:hover {
+  transition: 0.5s ease-in-out;
+  transform: scale(1.2);
+}
+
+#main-nav {
+  display: flex;
   list-style: none;
 }
 
-li a {
-  display: block;
-  color: black;
-  text-align: right;
-  padding: 16px;
-  text-decoration: none;
+.nav-link {
+  padding: 10px;
+  text-align: center;
 }
 
-li a:hover {
-  font-weight: bolder;
+.nav-link:hover {
+  color: yellow;
 }
 
-#header-img {
-    height: 50px;
-    width: 50px;
+#nav-bar {
+  display: flex;
+  align-items: center;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    width: fit-content;
-    min-height: 75px;
-    padding: 0px 0px;
-    justify-content: space-around;
-    align-items: center;
+#main-form {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  max-width: auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (max-width: 650px) {
-    nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
-    }
-    nav li {
-      padding-bottom: 5px;
-    }
-  }
-  
-  nav > ul {
-    width: 35vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  
-  @media (max-width: 650px) {
-    nav > ul {
-      flex-direction: column;
-    }
-  }
+#form {
+  display: flex;
+  padding: 30px;
+}
 
+input {
+  padding: 3px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px -2px 12px 3px rgba(0, 0, 0, 0.38);
+}
 
+.inputs {
+  padding: 10px;
+}
 
+label,
+#email,
+#submit {
+  padding: 15px;
+}
 
+label {
+  display: flex;
+  align-items: center;
+}
+
+#submit:hover {
+  transition: 0.6s ease-in-out;
+  transform: scale(1.2);
+}
 /* Um @mediaquery */
 /* Usar um flex box */
